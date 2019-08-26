@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JiaQi's Blog</title>
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
+<link rel="shortcut icon" href="favicon.jpeg"></head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="js/runtime.3964ebb6f53a392eb988.js"></script><script type="text/javascript" src="js/vendors.6abe1c62713d50820c24.js"></script><script type="text/javascript" src="js/main.07fcaf23a4490464c498.js"></script></body>
+</html>
